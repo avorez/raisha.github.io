@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasir Warung</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Kasir Warung Bosku</h1>
+    <form id="formKasir">
+      <input type="text" id="searchBarang" placeholder="Cari barang..." />
+      <select id="barang" required>
+        <option value="">Pilih barang</option>
+      </select>
+      <input type="number" id="jumlah" placeholder="Jumlah" min="1" required />
+      <div id="hargaSatuan">Harga: Rp0</div>
+      <div id="subtotal">Subtotal: Rp0</div>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <h2>Daftar Belanja</h2>
+    <ul id="daftarBelanja"></ul>
+
+    <div class="total">
+      Total Bayar: <span id="totalHarga">Rp0</span>
+    </div>
+
+    <button id="resetBtn">Reset</button>
+
+    <h2>Riwayat Pembelian</h2>
+    <ul id="riwayatPembelian"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
